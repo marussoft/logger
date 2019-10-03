@@ -8,7 +8,7 @@ class Log
 {
     protected $filePath;
 
-    protected $rewriteMode
+    protected $rewriteMode;
 
     public function __construct(string $filePath, bool $rewriteMode = true)
     {
@@ -19,7 +19,7 @@ class Log
     public function write(string $message) : void
     {
         if ($this->rewriteMode) {
-            $logFile = fopen($this->filePath . '.log', 'x');
+            $logFile = fopen($this->filePath . '.log', 'w');
         } else {
             $logFile = fopen($this->filePath . '.log', 'a');
         }
