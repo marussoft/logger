@@ -1,0 +1,27 @@
+{
+    "name": "marussia/logger",
+    "type": "library",
+    "description": "Marussia simple logger",
+    "license": "MIT",
+    "keywords": [
+        "logger"
+    ],
+    "authors": [
+        {
+            "name": "Mikhail Ilinsky",
+            "email": "mail@milinsky.ru"
+        }
+    ],
+    "support": {
+        "docs": "https://docs.marussia.org/logger/"
+    },
+    "require": {
+        "php": "^7.0"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Marussia\\Logger\\": "src/"
+        }
+    }
+}
